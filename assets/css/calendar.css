@@ -1,0 +1,155 @@
+ul{
+    list-style-type: none;
+}
+
+.month{
+    padding: 70px 25px;
+    width: 100%;
+    background: rgb(165, 58, 9);
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev{
+    float: left;
+    padding-top : 10px;
+}
+ .month .prev,
+ .next:hover{
+    cursor: pointer;
+ }
+
+.month .next{
+    float: right;
+    padding-top: 10px;
+}
+
+.weekDays{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekDays li{
+    display: inline-block;
+    /* width: 12.6%; */
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+  }
+  
+  .days div {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    width: calc(100% / 8);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+  }
+  
+  .days div:hover:not(.today) {
+    background-color: rgb(224, 83, 17);
+    border: 0.2rem solid rgb(236, 227, 227);
+    cursor: pointer;
+  }
+  
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+  
+  .today {
+    background-color: rgb(224, 83, 17);
+  }
+
+/* @media screen and (max-width: 470px){
+    .days div{
+    font-size: 1.1rem;
+    margin: 0.2rem;  
+    }
+}
+@media screen and (max-width: 447px){
+    .days div{
+    font-size: 1rem;
+    margin: 0.1rem;  
+    }
+    .weekDays{
+        margin: -0.1;
+        
+    }
+    .weekDays li{
+        
+        margin: -0.09rem;
+        
+    }
+} */
+
+@media screen and (max-width: 1130px) {
+    
+    .days div{
+        width: 11.4%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    
+    .days div{
+        width: 13.1%;
+    }
+}
+
+/* @media screen and (max-width: 720px) {
+    .weekDays li,
+    .days li{
+        width: 13.1%;
+    }
+} */
+
+@media screen and (max-width: 630px) {
+    
+    .days div{
+        width: 11.7%;
+    }
+}
+
+/* @media screen and (max-width: 420px) {
+    .weekDays li,
+    .days li{
+        width: 12.5%;
+    }
+    .days li .active{
+        padding: 2px;
+    }
+} */
+
+/* @media screen and (max-width: 290px) {
+    .weekDays li,
+    .days li{
+        width: 12.2%;
+    }
+} */

@@ -1,0 +1,148 @@
+.teacher{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    min-height: 100vh;
+    background: #fff;
+    display: grid;
+    transition: 0.5s;
+}
+.teacher .heading{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: rgb(224, 83, 17);
+}
+
+.teacher .heading h3{
+    color: #fff;
+}
+.teacher .heading h3 button{
+    float: right;
+    padding: 5px 10px;
+    background: rgb(224, 83, 17);
+    text-decoration: none;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.teacher .tbody{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    background: #fff;
+}
+
+.teacher table{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.teacher .tbody thead td{
+    font-weight: 600;
+}
+
+.teacher table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.teacher table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.teacher table tbody tr:hover{
+    background-color: rgb(224, 83, 17);
+}
+
+.teacher table tr td{
+    padding: 9px 8px;
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.modal_content{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    animation-name: loadbg;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+#teacher_img{
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    display: flex;
+    background: chocolate;
+    border-radius: 50px;
+}
+
+#teacher_img input{
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    border-radius: 50px;
+    opacity: 0;
+    position: absolute;
+}
+
+@keyframes loadbg{
+    form{
+        top: 0px;
+    }
+    to{
+        top: 30px;
+    }
+}
+
+.modal_content img{
+    border-radius: 50px;
+    background: chocolate;
+}
+
+.modal_content input{
+    width: 50%;
+    border-radius: 40px;
+    padding: 5px 20px;
+    display: block;
+    outline: none;
+    margin: 15px auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+}
+
+@media (max-width:550px) {
+    .teacher table thead td{
+        font-weight: 400px;
+    }
+    .teacher table tr td{
+        padding: 2px 1px;
+    }
+}
